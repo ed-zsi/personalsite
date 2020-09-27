@@ -7,7 +7,7 @@ body.dark {
     color: white;
 }
 
-button{
+#btn{
     border: none;
     color: white;
     background-color: #191b1c;
@@ -19,13 +19,13 @@ button{
     outline:none;
 }
 
-button:hover{
+#btn:hover{
     padding: 1.1rem;
     outline:none;
 }
 
-button.active{
-    transform: translateX(-125px);
+#btn.active{
+    transform: translateX(-120px);
     outline:none;
 }
 
@@ -141,4 +141,41 @@ h1, h2, h3, h4, h5, h6{
     text-align: left;
     font-size: 20px;
     position: absolute;
+}
+
+
+.bb{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    background-color: black;
+    color: white;
+    border: none;
+    outline:none;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about{
+    position: fixed;
+    top: 300px;
+    left: 200px;
+}
+#prs{
+    position: fixed;
+    top: 300px;
+    left: 600px;
+}
+#eler{
+    position: fixed;
+    top: 300px;
+    left: 1000px;
+}
+#wip{
+    position: fixed;
+    top: 300px;
+    left: 1400px;
 }
