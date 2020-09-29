@@ -2,19 +2,6 @@ body{
     transition: background 0.3s linear, color 0.3s linear;
 }
 
-body.hoveredabout{
-    background-color: turquoise;
-}
-body.hoveredeler{
-    background-color: rgb(255, 0, 0);
-}
-body.hoveredprs{
-    background-color: rgb(217, 255, 0);
-}
-body.hoveredwip{
-    background-color: rgb(255, 0, 200);
-}
-
 body.dark {
     background-color: #272727;
     color: white;
@@ -30,8 +17,8 @@ body.dark {
     padding: 1rem;
     transition: transform 0.3s ease-in-out;
     outline:none;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
 #btn:hover{
@@ -69,15 +56,11 @@ nav ul li{
     padding: 1.5rem 0;
 }
 
-p{
-    color: white;
-}
-
 a{
     color: white;
     text-decoration: none;
-    -webkit-transition: .2s;
-    transition: .2s;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 a:hover {
@@ -164,45 +147,25 @@ h1, h2, h3, h4, h5, h6{
     position: absolute;
 }
 
-
-.bb{
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
-    background-color: black;
+p{
     color: white;
+}
+
+#back{
     border: none;
+    color: white;
+    background-color: #191b1c;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 1rem;
     outline:none;
-    text-align: center;
-    border-radius: 25px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-transition: .4s;
-    transition: .4s;
+    border-radius: 10px;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
-.bb:hover{
+#back:hover{
     background-color: #373737;
-}
-
-#about{
-    position: fixed;
-    top: 300px;
-    left: 200px;
-}
-#prs{
-    position: fixed;
-    top: 300px;
-    left: 600px;
-}
-#eler{
-    position: fixed;
-    top: 300px;
-    left: 1000px;
-}
-#wip{
-    position: fixed;
-    top: 300px;
-    left: 1400px;
+    outline:none;
 }
