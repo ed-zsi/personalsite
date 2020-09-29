@@ -70,7 +70,6 @@ a:hover {
     background-color: #373737;
 }
 
-
 h1, h2, h3, h4, h5, h6{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -133,4 +132,36 @@ h1, h2, h3, h4, h5, h6{
     position: fixed;
     top: 300px;
     left: 1400px;
+}
+
+.switch input {
+    position: absolute;
+    right: 60px;
+    opacity: 0;
+    width: 35%;
+    height: 2%;
+    background-position: top;
+}
+.switch {
+    display: inline-block;
+    font-size: 20px;
+    height: 1em;
+    width: 2em;
+    background: #373737;
+    border-radius: 1em;
+}
+.switch div {
+    height: 1em;
+    width: 1em;
+    border-radius: 1em;
+    background:rgb(122, 122, 122);
+    box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+    -webkit-transition: all 300ms;
+       -moz-transition: all 300ms;
+            transition: all 300ms;
+}
+.switch input:checked + div {
+    -webkit-transform: translate3d(100%, 0, 0);
+       -moz-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
 }
