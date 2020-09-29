@@ -85,16 +85,9 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
-.placeholder.text{
-    text-align: left;
-    font-size: 20px;
-    position: absolute;
-}
-
-
 .bb{
-    padding-top: 10rem;
     padding-bottom: 10rem;
+    padding-top: 10rem;
     padding-left: 8rem;
     padding-right: 8rem;
     background-color: #212121;

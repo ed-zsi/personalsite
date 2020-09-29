@@ -20,8 +20,6 @@
     outline: none;
 }
 
-
-
 body{
     transition: background 0.3s linear, color 0.3s linear;
 }
@@ -109,55 +107,6 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
-.placeholder.text{
-    text-align: left;
-    font-size: 20px;
-    position: absolute;
-}
-
-
-.bb{
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
-    background-color: #212121;
-    color: white;
-    border: none;
-    outline:none;
-    text-align: center;
-    border-radius: 25px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.bb:hover{
-    background-color: #373737;
-}
-
-#about{
-    position: fixed;
-    top: 300px;
-    left: 200px;
-}
-#prs{
-    position: fixed;
-    top: 300px;
-    left: 600px;
-}
-#eler{
-    position: fixed;
-    top: 300px;
-    left: 1000px;
-}
-#wip{
-    position: fixed;
-    top: 300px;
-    left: 1400px;
-}
-
 .switch input {
     position: absolute;
     right: 60px;
@@ -189,3 +138,79 @@ h1, h2, h3, h4, h5, h6{
        -moz-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
 }
+
+.cc{
+    float: left;
+    width: 18.1%;
+    padding: 5px;
+}
+
+@-webkit-keyframes cc {
+    0% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    50% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    100% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  }
+  @keyframes cc {
+    0% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    50% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    100% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  }
+  @-webkit-keyframes cc-sink {
+    100% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  }
+  @keyframes cc-sink {
+    100% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  }
+  .cc {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .cc:hover, .cc:focus, .cc:active {
+    -webkit-animation-name: cc-sink, cc;
+    animation-name: cc-sink, cc;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
+
+.main::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
