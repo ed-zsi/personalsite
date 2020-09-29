@@ -1,3 +1,14 @@
+html{
+  margin: 0px;
+  padding: 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 #back{
 	background-color:#212121;
 	border-radius:5px;
@@ -221,3 +232,24 @@ h1, h2, h3, h4, h5, h6{
     clear: both;
     display: table;
   }
+
+.abouttext{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+#wipshop{
+  padding-top: 300px;
+  font-size: 40px;
+  text-shadow: 9px 9px 8px #000000;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#wipshop:hover{
+font-size: 50px;
+}

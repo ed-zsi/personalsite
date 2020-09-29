@@ -28,7 +28,7 @@ window.onload = function () {
     switchtheme.addEventListener("click", function () {
         document.body.classList.toggle("dark-theme");
 
-        let theme = "light";
+        var theme = "light";
         if (document.body.classList.contains("dark-theme")) {
             theme = "dark";
         }
