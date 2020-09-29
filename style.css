@@ -1,5 +1,6 @@
 body{
     transition: background 0.3s linear, color 0.3s linear;
+    display: flex;
 }
 body.dark-theme {
     background-color: #272727;
@@ -18,11 +19,14 @@ body.dark-theme {
     outline:none;
     -webkit-transition: .4s;
     transition: .4s;
+    
 }
 
 #btn:hover{
     background-color: #373737;
     outline:none;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #btn.active{
@@ -104,6 +108,8 @@ h1, h2, h3, h4, h5, h6{
 
 .bb:hover{
     background-color: #373737;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #about{

@@ -9,10 +9,15 @@
 	padding:10px 20px;
     text-decoration:none;
     outline: none;
+    border: none;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 #back:hover{
     background-color:#373737;
     outline: none;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 #back:active{
 	position:relative;
@@ -40,11 +45,14 @@ body.dark-theme {
     outline:none;
     -webkit-transition: .4s;
     transition: .4s;
+    
 }
 
 #btn:hover{
     background-color: #373737;
     outline:none;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #btn.active{
@@ -139,12 +147,6 @@ h1, h2, h3, h4, h5, h6{
             transform: translate3d(100%, 0, 0);
 }
 
-.cc{
-    float: left;
-    width: 18.1%;
-    padding: 5px;
-}
-
 @-webkit-keyframes cc {
     0% {
       -webkit-transform: translateY(20px);
@@ -190,7 +192,10 @@ h1, h2, h3, h4, h5, h6{
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    width: 18.1%;
+    padding: 5px;
+    box-shadow: none;
+    border: none;
   }
   .cc:hover, .cc:focus, .cc:active {
     -webkit-animation-name: cc-sink, cc;
@@ -207,6 +212,8 @@ h1, h2, h3, h4, h5, h6{
     animation-fill-mode: forwards;
     -webkit-animation-direction: normal, alternate;
     animation-direction: normal, alternate;
+    box-shadow: none;
+    border: none;
   }
 
 .main::after {
