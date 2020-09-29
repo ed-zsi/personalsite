@@ -1,5 +1,4 @@
 window.onload = function () {
-    const body = document.body;
 
     //nav bar
     const btn = document.getElementById("btn");
@@ -11,41 +10,44 @@ window.onload = function () {
     });
 
     //dark theme
-    const toggle = document.getElementById("toggle");
+    //const toggle = document.getElementById("toggle");
 
-    toggle.addEventListener("change", (e) => {
-        document.body.classList.toggle("dark", e.target.checked);
+    //toggle.addEventListener("change", (e) => {
+    //    document.body.classList.toggle("dark", e.target.checked);
+    //});
+
+
+    //new and improved dark theme that i 100% did not steal
+    const switchtheme = document.querySelector(".switch-toggle");
+
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme == "dark") {
+        document.body.classList.add("dark-theme");
+    }
+
+    switchtheme.addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+
+        let theme = "light";
+        if (document.body.classList.contains("dark-theme")) {
+            theme = "dark";
+        }
+        localStorage.setItem("theme", theme);
     });
 
-    var button = document.getElementById("about")
-    var button2 = document.getElementById("prs")
-    var button3 = document.getElementById("eler")
-    var button4 = document.getElementById("wip")
-
-    button.onmouseover = function () {
-        body.className = 'hoveredabout';
-    }
-    button2.onmouseover = function () {
-        body.className = 'hoveredprs';
-    }
-    button3.onmouseover = function () {
-        body.className = 'hoveredeler';
-    }
-    button4.onmouseover = function () {
-        body.className = 'hoveredwip';
+    function save() {
+        var checkbox = document.getElementById('checkbox');
+        localStorage.setItem('checkbox', checkbox.checked);
     }
 
-    button.onmouseout = function () {
-        body.className = '';
-    }
-    button2.onmouseout = function () {
-        body.className = '';
-    }
-    button3.onmouseout = function () {
-        body.className = '';
-    }
-    button4.onmouseout = function () {
-        body.className = '';
+    function load() {
+        var checked = JSON.parse(localStorage.getItem('checkbox'));
+        document.getElementById("checkbox").checked = checked;
     }
 
+    checkbox.addEventListener("click", () => {
+        save()
+    });
+
+    load();
 };

@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Site</title>
 </head>
 
 <body>
 
-    <div class="text">
+
+    <div class="text" id="text">
         <h1>
             Main page
         </h1>
@@ -36,14 +38,16 @@
                 <li><a href="https://www.reddit.com/user/3edgy5me__">Reddit</a></li>
             </ul>
             <p>Dark Mode:</p>
-            <label class="switch" for="toggle">
-                <input type="checkbox" id="toggle" name="toggle" />
-                <span class="slider round"></span>
-            </label>
+
+            <div id="checkbox-container">
+                <div>
+                    <label for="option1"></label>
+                    <input class="switch-toggle" type="checkbox" id="checkbox">
+                </div>
         </nav>
     </div>
 
-    <div class="footer">
+    <div class=" footer">
         <p>&copy; Copyright 2020 Gábor Korpa</p>
     </div>
 
