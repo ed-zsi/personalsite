@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="randomcolor.css">
+    <title>Randomcolor</title>
+</head>
+<body bgcolor="#d09ebc">
+    <h1 id="a">placeholder 
+    </h1>
+    <script type="text/javascript">
+      var bg_colour = Math.floor(Math.random() * 16777215).toString(16);
+      bg_colour = "#" + ("000000" + bg_colour).slice(-6);
+      document.bgColor = bg_colour;
+      document.getElementById('a').innerHTML = bg_colour;
+    </script>
+</body>
+</html>
