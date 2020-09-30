@@ -11,10 +11,9 @@ html{
 }
 body{
     transition: background 0.3s linear, color 0.3s linear;
-    display: flex;
 }
 body.dark-theme {
-    background-color: #ff0000;
+    background-color: #272727;
     color: white;
 }
 
@@ -102,32 +101,26 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .bb{
-    padding-bottom: 10rem;
-    padding-top: 10rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    float: left;
+    width: 25%;
+    font-size: 30px;
     background-color: #212121;
-    color: white;
     border: none;
-    outline:none;
+    color: white;
+    padding: 50px 32px;
     text-align: center;
-    border-radius: 25px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-transition: .4s;
-    transition: .4s;
+    text-decoration: none;
+    outline: none;
 }
-
 .bb:hover{
     background-color: #373737;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+}
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
 }
 
-#about { left: 9.6%; position: relative; top: 70%; }
-#prs { left: 19.2%; position: relative; top: 70%; }
-#eler { left: 28.8%; position: relative; top: 70%; }
-#wip { left: 38.4%; position: relative; top: 70%; }
 
 
 .switch input {
