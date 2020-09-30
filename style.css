@@ -3,7 +3,7 @@ body{
     display: flex;
 }
 body.dark-theme {
-    background-color: #272727;
+    background-color: #ff0000;
     color: white;
 }
 

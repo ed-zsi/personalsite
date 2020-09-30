@@ -174,19 +174,19 @@ h1, h2, h3, h4, h5, h6{
       -webkit-transform: translateY(20px);
       transform: translateY(20px);
     }
-  }
+}
   @-webkit-keyframes cc-sink {
     100% {
       -webkit-transform: translateY(20px);
       transform: translateY(20px);
     }
-  }
+}
   @keyframes cc-sink {
     100% {
       -webkit-transform: translateY(20px);
       transform: translateY(20px);
     }
-  }
+}
   .cc {
     display: inline-block;
     vertical-align: middle;
@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6{
     padding: 5px;
     box-shadow: none;
     border: none;
-  }
+}
   .cc:hover, .cc:focus, .cc:active {
     -webkit-animation-name: cc-sink, cc;
     animation-name: cc-sink, cc;
@@ -214,10 +214,26 @@ h1, h2, h3, h4, h5, h6{
     animation-direction: normal, alternate;
     box-shadow: none;
     border: none;
-  }
+}
 
 .main::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
+
+.pr{
+  float: left;
+  width: 12.5%;
+  font-size: 20px;
+  background-color: #212121;
+  border: none;
+  color: white;
+  padding: 50px 32px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+}
+.pr:hover{
+  background-color: #373737;
+}
