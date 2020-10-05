@@ -1,0 +1,20 @@
+body.active{
+    animation-name:change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+} @keyframes change{
+    0% {background-color:red;}
+    25% {background-color: green;}
+    50% {background-color:blue;}
+    75% {background-color: violet}
+    100% {background-color:yellow;}
+}
+#wrapper{
+    text-align: center;
+}
+#btn{
+    font-size: 40px;
+    margin:auto;
+    display:block;
+}
